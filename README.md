@@ -10,7 +10,7 @@ Pedidos são feitos pelas filiais através de funcionários à fornecedores espe
 
 
 
-![Conceitual_projeto.png](Conceitual_projeto.png)
+![Conceitual_projeto_v2.png](Conceitual_projeto_v2.png)
 
 ![Logico_projeto.png](Logico_projeto.png)
 

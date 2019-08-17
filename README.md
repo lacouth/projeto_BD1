@@ -1,3 +1,9 @@
+# Projeto de Banco de Dados I - 2019.1
+
+## Grupo
+  Gabriel Borsero Estrela Bernardo - 20181370004
+  Patric Lacouth da Silva - 20191370047
+
 # WineStore
 
 Para os propósitos desse trabalho, vamos assumir como nosso minimundo uma rede de lojas de vinhos com várias filiais em cidades diferentes e em diversos países.

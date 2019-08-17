@@ -138,6 +138,7 @@ INSERT INTO VENDEDOR([idFUNCIONARIO],[comissao]) VALUES(11,10),(12,13),(13,12),(
  ```sql
 INSERT INTO CLIENTE([idCLIENTE],[nome],[telefone],[email],[data_nasc]) VALUES(1,'Prescott Suarez','(700) 535-8201','libero.at@est.edu','31/12/69'),(2,'Hanna Ray','(198) 973-2795','sagittis.Nullam.vitae@idrisusquis.com','31/12/69'),(3,'Angelica Vance','(481) 846-1264','ipsum.Phasellus@ornareplacerat.net','31/12/69'),(4,'Alana Sellers','(614) 761-1639','commodo.hendrerit@dictum.co.uk','31/12/69'),(5,'Jade Callahan','(340) 657-5066','eu@diam.org','31/12/69'),(6,'Glenna Nash','(618) 388-8798','a@interdumenimnon.co.uk','31/12/69'),(7,'Joseph Pate','(518) 431-6778','pretium.et@Pellentesquehabitant.co.uk','31/12/69'),(8,'Sarah Brock','(125) 725-3364','leo.in@inlobortistellus.org','31/12/69'),(9,'Quynn Maldonado','(633) 203-6548','erat.neque.non@vitaediam.ca','31/12/69'),(10,'Cullen Glass','(136) 869-8925','egestas.blandit@vel.com','31/12/69');
 INSERT INTO CLIENTE([idCLIENTE],[nome],[telefone],[email],[data_nasc]) VALUES(11,'Shad Becker','(230) 849-1957','leo.Morbi.neque@Aliquamfringilla.org','31/12/69'),(12,'Dane Frederick','(434) 705-3281','Proin@neque.com','31/12/69'),(13,'Macon Hutchinson','(618) 808-2427','Vivamus.euismod@vel.com','31/12/69'),(14,'Samuel Beard','(178) 962-6557','ultricies.adipiscing@Quisque.net','31/12/69'),(15,'Tamekah Taylor','(751) 266-6724','et.ultrices.posuere@odiosagittissemper.org','31/12/69'),(16,'Kasimir Robbins','(305) 296-8487','egestas.hendrerit@arcuVestibulum.ca','31/12/69'),(17,'Mona Cobb','(482) 822-2409','parturient.montes.nascetur@ornarelectus.net','31/12/69'),(18,'Maxine Jacobson','(188) 649-3968','nec@aliquetPhasellus.edu','31/12/69'),(19,'Desirae Elliott','(450) 655-6560','Nulla.facilisi.Sed@eu.org','31/12/69'),(20,'Sebastian Stevenson','(131) 100-0238','cursus.et.magna@sedsemegestas.org','31/12/69');
+```
 
 # COMPRA
 
@@ -145,6 +146,4 @@ INSERT INTO CLIENTE([idCLIENTE],[nome],[telefone],[email],[data_nasc]) VALUES(11
 INSERT INTO COMPRA([idCOMPRA],[idCLIENTE],[idVENDEDOR],[data],[idPROMOCAO]) VALUES(1,16,10,'09/09/17',6),(2,5,6,'24/05/17',8),(3,5,5,'23/06/19',8),(4,1,7,'03/09/16',1),(5,20,5,'08/09/19',10),(6,15,3,'14/02/16',10),(7,7,10,'29/01/19',7),(8,19,5,'17/01/18',6),(9,14,7,'31/07/20',2),(10,19,9,'15/07/18',1);
 INSERT INTO COMPRA([idCOMPRA],[idCLIENTE],[idVENDEDOR],[data],[idPROMOCAO]) VALUES(11,12,2,'22/07/18',6),(12,8,1,'25/12/16',4),(13,7,2,'27/05/16',8),(14,17,8,'20/11/17',10),(15,11,1,'30/10/16',5),(16,11,6,'30/11/15',4),(17,13,4,'22/01/19',7),(18,8,2,'21/12/18',5),(19,4,8,'13/10/15',5),(20,11,9,'26/02/16',7);
 INSERT INTO COMPRA([idCOMPRA],[idCLIENTE],[idVENDEDOR],[data],[idPROMOCAO]) VALUES(21,16,4,'03/07/17',5),(22,8,3,'09/04/17',1),(23,12,8,'15/01/17',2),(24,13,8,'05/04/18',10),(25,15,5,'26/09/15',6),(26,11,10,'03/02/19',4),(27,12,1,'13/07/20',4),(28,18,3,'15/11/19',3),(29,4,9,'19/08/18',4),(30,2,3,'17/04/16',7);
-
-
 ```

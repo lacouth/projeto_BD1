@@ -105,5 +105,11 @@ INSERT INTO ROTULO ([idROTULO],[nome],[descricao],[percentual_alcoolico],[preco]
 ```sql
 INSERT INTO LOJA_ROTULO([idLOJA],[idROTULO],[quantidade]) VALUES(6,8,30),(16,1,29),(3,5,7),(7,3,5),(15,2,8),(10,3,6),(18,6,33),(6,6,7),(18,9,30),(5,3,48);
 ```
+# DISTRIBUIDOR
+
+```sql
+INSERT INTO DISTRIBUIDOR([idDISTRIBUIDOR],[nome],[telefone]) VALUES(2,'Joshua','(356) 546-0278'),(3,'Alvin','(962) 822-3530'),(10,'Noble','(478) 135-6364'),(4,'Barclay','(414) 723-0632'),(10,'Channing','(911) 242-7853'),(9,'Randall','(238) 676-6101'),(3,'Isaiah','(666) 811-0058'),(4,'Blaze','(624) 715-4618'),(6,'Lars','(600) 239-0275'),(10,'Colt','(609) 360-0806');
+```
+
 
 

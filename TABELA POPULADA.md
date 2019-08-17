@@ -100,6 +100,10 @@ INSERT INTO LOJA([idLOJA],[nome],[telefone],[email],[idCIDADE]) VALUES(1,'Fernes
 ```sql
 INSERT INTO ROTULO ([idROTULO],[nome],[descricao],[percentual_alcoolico],[preco],[ano_producao],[idPRODUTOR],[idCATEGORIA]) VALUES(1,' Merlot','Lorem ipsum dolor sit amet,','30.49','104.43',1830,8,2),(2,' Hermitage La Chapelle','Lorem ipsum dolor sit','35.65','571.66',1813,1,1),(3,' Merlot bcd','Lorem ipsum','30.85','417.87',1905,6,1),(4,' Syrah','Lorem ipsum dolor','26.10','031.46',1846,3,4),(5,' Chardonnay ','Lorem ipsum dolor sit amet,','21.74','145.84',2000,10,3),(6,' Gewürztraminer','Lorem ipsum dolor sit','31.26','558.07',1952,2,1),(7,' Chapeleta','Lorem ipsum dolor','32.11','125.00',1848,5,1),(8,' Charmander','Lorem ipsum dolor sit amet,','35.13','149.96',1957,7,5),(9,' Geodude','Lorem ipsum dolor sit amet,','30.84','958.21',1826,5,1),(10,' Syscyther','Lorem ipsum','25.77','308.77',1983,2,3);
 ```
+# LOJA_ROTULO
 
+```sql
+INSERT INTO LOJA_ROTULO([idLOJA],[idROTULO],[quantidade]) VALUES(6,8,30),(16,1,29),(3,5,7),(7,3,5),(15,2,8),(10,3,6),(18,6,33),(6,6,7),(18,9,30),(5,3,48);
+```
 
 

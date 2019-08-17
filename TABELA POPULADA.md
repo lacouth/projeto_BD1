@@ -129,6 +129,9 @@ INSERT INTO FUNCIONARIO([idFUCIONARIO],[nome],[telefone],[email],[ativo],[idLOJA
 INSERT INTO MOTORISTA([idFUNCIONARIO],[cnh]) VALUES(1,'P7V1C9'),(2,'O9R3V6'),(3,'L7L2M3'),(4,'J5Y1S8'),(5,'U3B4T4'),(6,'S8C7K6'),(7,'F7X2S0'),(8,'Q4E6Q5'),(9,'C4O0V0'),(10,'O4N7K2');
 ```
 
+# VENDEDOR
 
-
+```sql
+INSERT INTO FUNCIONARIO([idVENDEDOR],[comissao]) VALUES(11,'11.30'),(12,'12.40'),(13,'12.32'),(14,'10.75'),(15,'10.40'),(16,'12.59'),(17,'12.61'),(18,'10.10'),(19,'10.24'),(20,'12.36');
+```
 

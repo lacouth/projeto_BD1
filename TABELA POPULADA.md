@@ -47,16 +47,25 @@ INSERT INTO Pais VALUES (27,'Venezuela')
 # REGIÃO
 
 ```sql
-INSERT INTO REGIAO (idREGIAO,nome,idPAIS) VALUES (1,"PR",54),(2,"Sicilia",48),(3,"Victoria",67),(4,"HA",52),(5,"SL",88),(6,"E",11),(7,"South Island",3),(8,"Styria",34),(9,"MU",64),(10,"Sląskie",52);
-INSERT INTO REGIAO (idREGIAO,nome,idPAIS) VALUES (11,"Bihar",28),(12,"NI",13),(13,"West Bengal",66),(14,"Araucanía",69),(15,"Heredia",51),(16,"XII",84),(17,"Luxemburg",90),(18,"Tasmania",89),(19,"AN",98),(20,"OG",65);
-INSERT INTO REGIAO (idREGIAO,nome,idPAIS) VALUES (21,"Vorarlberg",41),(22,"AN",4),(23,"PD",76),(24,"Lorraine",83),(25,"Madrid",49),(26,"Andalucía",61),(27,"BR",38),(28,"Cartago",65),(29,"HH",96),(30,"Dalarnas län",21);
-INSERT INTO REGIAO (idREGIAO,nome,idPAIS) VALUES (31,"IX",51),(32,"São Paulo",1),(33,"Vbg",96),(34,"QC",98),(35,"FC",86),(36,"BE",39),(37,"Noord Brabant",65),(38,"Biobío",17),(39,"PIE",80),(40,"PA",24);
-INSERT INTO REGIAO (idREGIAO,nome,idPAIS) VALUES (41,"Wielkopolskie",6),(42,"Zl",33),(43,"IA",89),(44,"Bremen",43),(45,"Dalarnas län",4),(46,"Wielkopolskie",58),(47,"Bahia",32),(48,"WA",8),(49,"Gävleborgs län",52),(50,"NL",23);
-INSERT INTO REGIAO (idREGIAO,nome,idPAIS) VALUES (51,"DU",21),(52,"Quebec",25),(53,"South Australia",79),(54,"QLD",35),(55,"Henegouwen",79),(56,"South Island",69),(57,"V",8),(58,"KA",84),(59,"NÖ.",26),(60,"Saskatchewan",8);
-INSERT INTO REGIAO (idREGIAO,nome,idPAIS) VALUES (61,"NI",41),(62,"Madrid",31),(63,"Lower Saxony",8),(64,"ON",10),(65,"Zl",87),(66,"MA",23),(67,"W",16),(68,"QC",79),(69,"AL",55),(70,"Wyoming",44);
-INSERT INTO REGIAO (idREGIAO,nome,idPAIS) VALUES (71,"Cardiganshire",8),(72,"IL",48),(73,"Radnorshire",13),(74,"VEN",87),(75,"İzmir",63),(76,"North Island",12),(77,"Sicilia",39),(78,"Bur",58),(79,"Gelderland",7),(80,"Vienna",90);
-INSERT INTO REGIAO (idREGIAO,nome,idPAIS) VALUES (81,"Maule",21),(82,"Kano",60),(83,"DL",31),(84,"Nord-Pas-de-Calais",17),(85,"AB",37),(86,"PUG",81),(87,"Gl",69),(88,"Van",43),(89,"VIC",52),(90,"RO",32);
-INSERT INTO REGIAO (idREGIAO,nome,idPAIS) VALUES (91,"HE",54),(92,"U",19),(93,"Wie",19),(94,"Kansas",18),(95,"O",52),(96,"Wie",31),(97,"Wie",11),(98,"Istanbul",31),(99,"G",16),(100,"N.",53);
+INSERT INTO Pais VALUES (0, 'Banyuls', 16)
+
+INSERT INTO Pais VALUES (1, 'Blanquette', 18)
+
+INSERT INTO Pais VALUES (2, 'Cabardès', 9)
+
+INSERT INTO Pais VALUES (3, 'Collioure', 18)
+
+INSERT INTO Pais VALUES (4, 'Corbières', 10)
+
+INSERT INTO Pais VALUES (5, 'Roussillon', 14)
+
+INSERT INTO Pais VALUES (6, 'Fitou', 10)
+
+INSERT INTO Pais VALUES (7, 'Maury', 5)
+
+INSERT INTO Pais VALUES (8, 'Minervois', 8)
+
+INSERT INTO Pais VALUES (9, 'Rivesaltes', 18)
 ```
 
 

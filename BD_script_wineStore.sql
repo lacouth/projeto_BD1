@@ -1,7 +1,8 @@
---CREATE DATABASE WineStore
+CREATE DATABASE WineStore
+GO
 
 USE WineSTore
-
+GO
 /*** Criação da tabela categoria ***/
 
 CREATE TABLE CATEGORIA (

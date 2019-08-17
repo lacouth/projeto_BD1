@@ -108,7 +108,13 @@ INSERT INTO LOJA_ROTULO([idLOJA],[idROTULO],[quantidade]) VALUES(6,8,30),(16,1,2
 # DISTRIBUIDOR
 
 ```sql
-INSERT INTO DISTRIBUIDOR([idDISTRIBUIDOR],[nome],[telefone]) VALUES(2,'Joshua','(356) 546-0278'),(3,'Alvin','(962) 822-3530'),(10,'Noble','(478) 135-6364'),(4,'Barclay','(414) 723-0632'),(10,'Channing','(911) 242-7853'),(9,'Randall','(238) 676-6101'),(3,'Isaiah','(666) 811-0058'),(4,'Blaze','(624) 715-4618'),(6,'Lars','(600) 239-0275'),(10,'Colt','(609) 360-0806');
+INSERT INTO DISTRIBUIDOR([idDISTRIBUIDOR],[nome],[telefone]) VALUES(1,'Armando','(949) 963-6782'),(2,'Wilma','(745) 401-5875'),(3,'Madeline','(495) 301-8218'),(4,'Harper','(498) 638-0574'),(5,'Hyacinth','(742) 704-3576'),(6,'Kasper','(768) 423-4899'),(7,'Alyssa','(789) 812-0737'),(8,'Kenneth','(498) 891-0163'),(9,'Kevyn','(574) 275-3899'),(10,'Aiko','(797) 176-7147');
+```
+
+# PEDIDO
+
+```sql
+INSERT INTO PEDIDO([data],[idDISTRIBUIDOR],[idLOJA],[idROTULO],[quantidade]) VALUES('25/09/19',2,6,5,2),('19/12/18',1,3,3,25),('28/10/18',2,16,1,44),('06/06/20',6,20,4,30),('30/12/19',2,15,9,30),('08/04/20',4,18,2,48),('10/07/20',7,15,9,5),('08/04/20',10,4,1,5),('30/06/20',7,5,3,50),('05/02/20',8,20,7,10);
 ```
 
 

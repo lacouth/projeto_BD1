@@ -95,4 +95,11 @@ INSERT INTO CIDADE([idCIDADE],[nome],[idPAIS]) VALUES(1,'Salzwedel',25),(2,'Oliv
 INSERT INTO LOJA([idLOJA],[nome],[telefone],[email],[idCIDADE]) VALUES(1,'Ferness','1-905-929-1562','nisi@nisl.net',5),(2,'Habergy','1-935-297-1667','viverra.Maecenas.iaculis@Etiam.co.uk',5),(3,'Vilcún','1-411-414-7662','odio@erat.org',20),(4,'Overrepen','1-136-616-8645','Donec.porttitor@ornare.ca',6),(5,'Kolmont','1-389-364-0469','Curabitur.massa@turpisAliquamadipiscing.org',20),(6,'Gore','1-248-453-6849','lacinia@ligulaNullam.org',3),(7,'Stonewall','1-415-165-4369','eu@mauris.net',11),(8,'Belmont','1-641-258-0375','semper.erat.in@orci.com',6),(9,'Minna','1-367-433-1828','In.faucibus.Morbi@condimentumDonec.ca',5),(10,'Birmingham','1-315-257-0631','ante.bibendum.ullamcorper@Inatpede.co.uk',14),(11,'Forges','1-979-870-7857','facilisi.Sed.neque@magnaCras.net',1),(12,'Saint-Prime','1-665-405-8952','Morbi@facilisiSedneque.ca',10),(13,'Uluberia','1-161-758-0019','felis.Nulla.tempor@dictum.edu',20),(14,'Marcedusa','1-742-957-7799','eu.odio.Phasellus@inmagna.com',1),(15,'Braives','1-648-181-5711','mauris.id@nibh.org',20),(16,'Tailles','1-501-570-5162','Suspendisse.non.leo@enimEtiamimperdiet.net',19),(17,'Bastia','1-774-998-2799','blandit.Nam.nulla@liberoatauctor.net',18),(18,'Cartagena','1-315-604-4701','mauris.aliquam.eu@loremluctusut.net',10),(19,'Melazzo','1-249-989-2343','magna@lobortis.ca',13),(20,'Empoli','1-957-445-4815','lacus@ultriciesadipiscing.org',4);
 
 ```
+# ROTULO
+
+```sql
+INSERT INTO ROTULO ([idROTULO],[nome],[descricao],[percentual_alcoolico],[preco],[ano_producao],[idPRODUTOR],[idCATEGORIA]) VALUES(1,' Merlot','Lorem ipsum dolor sit amet,','30.49','104.43',1830,8,2),(2,' Hermitage La Chapelle','Lorem ipsum dolor sit','35.65','571.66',1813,1,1),(3,' Merlot bcd','Lorem ipsum','30.85','417.87',1905,6,1),(4,' Syrah','Lorem ipsum dolor','26.10','031.46',1846,3,4),(5,' Chardonnay ','Lorem ipsum dolor sit amet,','21.74','145.84',2000,10,3),(6,' Gewürztraminer','Lorem ipsum dolor sit','31.26','558.07',1952,2,1),(7,' Hermitage La Chapelle','Lorem ipsum dolor','32.11','125.00',1848,5,1),(8,' Charmander','Lorem ipsum dolor sit amet,','35.13','149.96',1957,7,5),(9,' Geodude','Lorem ipsum dolor sit amet,','30.84','958.21',1826,5,1),(10,' Syscyther','Lorem ipsum','25.77','308.77',1983,2,3);
+```
+
+
 

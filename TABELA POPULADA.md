@@ -47,23 +47,25 @@ INSERT INTO Pais VALUES (27,'Venezuela')
 # REGIÃO
 
 ```sql
-INSERT INTO Pais VALUES (1, 'Blanquette', 20)
+INSERT INTO REGIAO VALUES (1, 'Banyuls', 1)
 
-INSERT INTO Pais VALUES (2, 'Cabardès', 12)
+INSERT INTO REGIAO VALUES (2, 'Blanquette', 13)
 
-INSERT INTO Pais VALUES (3, 'Collioure', 12)
+INSERT INTO REGIAO VALUES (3, 'Cabardès', 13)
 
-INSERT INTO Pais VALUES (4, 'Corbières', 6)
+INSERT INTO REGIAO VALUES (4, 'Collioure', 1)
 
-INSERT INTO Pais VALUES (5, 'Roussillon', 9)
+INSERT INTO REGIAO VALUES (5, 'Corbières', 17)
 
-INSERT INTO Pais VALUES (6, 'Fitou', 4)
+INSERT INTO REGIAO VALUES (6, 'Roussillon', 17)
 
-INSERT INTO Pais VALUES (7, 'Maury', 20)
+INSERT INTO REGIAO VALUES (7, 'Fitou', 8)
 
-INSERT INTO Pais VALUES (8, 'Minervois', 13)
+INSERT INTO REGIAO VALUES (8, 'Maury', 16)
 
-INSERT INTO Pais VALUES (9, 'Rivesaltes', 3)
+INSERT INTO REGIAO VALUES (9, 'Minervois', 5)
+
+INSERT INTO REGIAO VALUES (10, 'Rivesaltes', 3)
 ```
 
 

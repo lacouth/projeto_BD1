@@ -1,1 +1,12 @@
-1. Trocar a cardinalidade da relação LOJA-FUNCIONÁRIO
+|                                                  | D    | C    | L    | S    |
+| ------------------------------------------------ | ---- | ---- | ---- | ---- |
+| Entidade fraca                                   |      |      |      |      |
+| TEM -> estoque. workbench. brmodelo              |      |      |      |      |
+| Loja+Distribuidor -> tem que ser 1,n  com rotulo |      |      |      |      |
+| Um funcionário deve estar em 1,n lojas           |      |      |      |      |
+| Salário no funcionário                           |      |      |      |      |
+| Loja Rótulo - constraint maior que zero          |      |      |      |      |
+| Cartão fidelidade                                |      |      |      |      |
+| Cliente - Datanasc chk                           |      |      |      |      |
+| Cnh - chk                                        |      |      |      |      |
+|                                                  |      |      |      |      |

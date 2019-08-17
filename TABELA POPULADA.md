@@ -123,6 +123,12 @@ INSERT INTO FUNCIONARIO([idFUCIONARIO],[nome],[telefone],[email],[ativo],[idLOJA
 INSERT INTO FUNCIONARIO([idFUCIONARIO],[nome],[telefone],[email],[ativo],[idLOJA]) VALUES(11,'Abdul Gamble','(203) 900-4419','nec.ante.Maecenas@Etiamimperdietdictum.ca',1,6),(12,'Xander Bradley','(475) 447-7422','Donec.felis.orci@quamquis.edu',0,4),(13,'Ralph Faulkner','(442) 487-7207','elit.dictum@sollicitudina.org',0,2),(14,'Judah Hodges','(652) 688-3220','dapibus.gravida.Aliquam@Donectemporest.co.uk',0,6),(15,'Melissa Mcintosh','(936) 225-1202','semper.et.lacinia@Proinnonmassa.co.uk',1,9),(16,'Beverly Reid','(387) 774-3634','imperdiet@maurissagittis.com',1,6),(17,'Rahim Rosa','(381) 715-1348','vulputate.risus.a@aliquetProin.net',0,13),(18,'Lucian Estes','(485) 795-6106','pede.Cras.vulputate@nonummyut.co.uk',1,3),(19,'Kaseem Hester','(723) 757-5217','Sed.eu@senectusetnetus.org',1,1),(20,'Ifeoma Hooper','(463) 458-4103','odio.tristique@nislelementumpurus.edu',0,11);
 ```
 
+# MOTORISTA
+
+```sql
+INSERT INTO MOTORISTA([idFUNCIONARIO],[cnh]) VALUES(1,'P7V1C9'),(2,'O9R3V6'),(3,'L7L2M3'),(4,'J5Y1S8'),(5,'U3B4T4'),(6,'S8C7K6'),(7,'F7X2S0'),(8,'Q4E6Q5'),(9,'C4O0V0'),(10,'O4N7K2');
+```
+
 
 
 

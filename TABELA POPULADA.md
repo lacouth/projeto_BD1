@@ -11,16 +11,34 @@ INSERT INTO CATEGORIA VALUES (5, 'Federweisser')
 # PAIS
 
 ```sql
-INSERT INTO PAIS([idPAIS],[nome]) VALUES(1,'Tunisia'),(2,'Korea, South'),(3,'Australia'),(4,'Saint Kitts and Nevis'),(5,'United States Minor Outlying Islands'),(6,'Bouvet Island'),(7,'Honduras'),(8,'Côte D''Ivoire (Ivory Coast)'),(9,'Saint Barthélemy'),(10,'Saint Helena, Ascension and Tristan da Cunha');
-INSERT INTO PAIS([idPAIS],[nome]) VALUES(11,'Ghana'),(12,'Heard Island and Mcdonald Islands'),(13,'Norway'),(14,'Senegal'),(15,'Andorra'),(16,'Romania'),(17,'Guinea'),(18,'Antarctica'),(19,'Tonga'),(20,'Sierra Leone');
-INSERT INTO PAIS([idPAIS],[nome]) VALUES(21,'Cyprus'),(22,'Suriname'),(23,'Croatia'),(24,'Jamaica'),(25,'Canada'),(26,'Maldives'),(27,'Malaysia'),(28,'Isle of Man'),(29,'India'),(30,'Isle of Man');
-INSERT INTO PAIS([idPAIS],[nome]) VALUES(31,'Saint Barthélemy'),(32,'Bahrain'),(33,'Djibouti'),(34,'Angola'),(35,'Guernsey'),(36,'New Zealand'),(37,'Oman'),(38,'Uganda'),(39,'Somalia'),(40,'Bahamas');
-INSERT INTO PAIS([idPAIS],[nome]) VALUES(41,'Maldives'),(42,'Saint Helena, Ascension and Tristan da Cunha'),(43,'Bulgaria'),(44,'Haiti'),(45,'Colombia'),(46,'Cocos (Keeling) Islands'),(47,'Yemen'),(48,'Spain'),(49,'Albania'),(50,'Sri Lanka');
-INSERT INTO PAIS([idPAIS],[nome]) VALUES(51,'Guadeloupe'),(52,'French Polynesia'),(53,'Argentina'),(54,'Anguilla'),(55,'Poland'),(56,'Bermuda'),(57,'Antarctica'),(58,'Tokelau'),(59,'Singapore'),(60,'Martinique');
-INSERT INTO PAIS([idPAIS],[nome]) VALUES(61,'Barbados'),(62,'Turkmenistan'),(63,'Kuwait'),(64,'Côte D''Ivoire (Ivory Coast)'),(65,'Finland'),(66,'Morocco'),(67,'Malawi'),(68,'Cambodia'),(69,'Guinea-Bissau'),(70,'Palau');
-INSERT INTO PAIS([idPAIS],[nome]) VALUES(71,'Solomon Islands'),(72,'Paraguay'),(73,'Tanzania'),(74,'Russian Federation'),(75,'French Polynesia'),(76,'Mexico'),(77,'Trinidad and Tobago'),(78,'Lebanon'),(79,'Seychelles'),(80,'Lesotho');
-INSERT INTO PAIS([idPAIS],[nome]) VALUES(81,'India'),(82,'Antigua and Barbuda'),(83,'French Polynesia'),(84,'Maldives'),(85,'Costa Rica'),(86,'Palestine, State of'),(87,'Virgin Islands, United States'),(88,'Palau'),(89,'Micronesia'),(90,'Hong Kong');
-INSERT INTO PAIS([idPAIS],[nome]) VALUES(91,'French Polynesia'),(92,'Luxembourg'),(93,'Anguilla'),(94,'Afghanistan'),(95,'Timor-Leste'),(96,'Pakistan'),(97,'Virgin Islands, United States'),(98,'Latvia'),(99,'Italy'),(100,'Poland');
+
+INSERT INTO Pais VALUES (1,'Alemanha')
+INSERT INTO Pais VALUES (2,'Argentina')
+INSERT INTO Pais VALUES (3,'Austrália')
+INSERT INTO Pais VALUES (4,'Áustria')
+INSERT INTO Pais VALUES (5,'Bélgica')
+INSERT INTO Pais VALUES (6,'Brasil')
+INSERT INTO Pais VALUES (7,'Canadá')
+INSERT INTO Pais VALUES (8,'Chile')
+INSERT INTO Pais VALUES (9,'China')
+INSERT INTO Pais VALUES (10,'Dinamarca')
+INSERT INTO Pais VALUES (11,'Escócia')
+INSERT INTO Pais VALUES (12,'Espanha')
+INSERT INTO Pais VALUES (13,'Estados Unidos')
+INSERT INTO Pais VALUES (14,'Finlândia')
+INSERT INTO Pais VALUES (15,'França')
+INSERT INTO Pais VALUES (16,'Grécia')
+INSERT INTO Pais VALUES (17,'Inglaterra')
+INSERT INTO Pais VALUES (18,'Irlanda')
+INSERT INTO Pais VALUES (19,'Itália')
+INSERT INTO Pais VALUES (20,'México')
+INSERT INTO Pais VALUES (21,'Noruega')
+INSERT INTO Pais VALUES (22,'Polônia')
+INSERT INTO Pais VALUES (23,'Portugal')
+INSERT INTO Pais VALUES (24,'Rússia')
+INSERT INTO Pais VALUES (25,'Suécia')
+INSERT INTO Pais VALUES (26,'Suiça')
+INSERT INTO Pais VALUES (27,'Venezuela')
 
 ```
 

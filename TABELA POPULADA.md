@@ -116,6 +116,13 @@ INSERT INTO DISTRIBUIDOR([idDISTRIBUIDOR],[nome],[telefone]) VALUES(1,'Armando',
 ```sql
 INSERT INTO PEDIDO([data],[idDISTRIBUIDOR],[idLOJA],[idROTULO],[quantidade]) VALUES('25/09/19',2,6,5,2),('19/12/18',1,3,3,25),('28/10/18',2,16,1,44),('06/06/20',6,20,4,30),('30/12/19',2,15,9,30),('08/04/20',4,18,2,48),('10/07/20',7,15,9,5),('08/04/20',10,4,1,5),('30/06/20',7,5,3,50),('05/02/20',8,20,7,10);
 ```
+# FUNCIONARIO
+
+```sql
+INSERT INTO FUNCIONARIO([idFUCIONARIO],[nome],[telefone],[ativo],[idLOJA]) VALUES(1,'Karina Talley','(962) 881-4089',1,5),(2,'Rahim Bullock','(622) 262-4725',0,14),(3,'Timon Soto','(797) 451-4673',0,16),(4,'Nasim Mcneil','(294) 827-7336',0,4),(5,'Castor Roach','(419) 986-4636',1,5),(6,'Joy Soto','(463) 372-5932',0,10),(7,'Edan Richards','(633) 520-6051',1,1),(8,'Edward Harding','(470) 340-2071',0,15),(9,'Candice Levy','(682) 334-5389',1,9),(10,'Linda Vance','(553) 874-0356',1,15);
+INSERT INTO FUNCIONARIO([idFUCIONARIO],[nome],[telefone],[ativo],[idLOJA]) VALUES(11,'Axel Bass','(728) 779-4901',0,20),(12,'Rahim Melendez','(868) 121-0634',0,5),(13,'Keegan Miranda','(262) 654-9342',1,20),(14,'Patrick Cooper','(832) 213-4067',0,8),(15,'Rachel Jordan','(929) 310-9843',1,11),(16,'Keiko Barlow','(273) 495-0506',1,16),(17,'Otto Fisher','(998) 329-3224',0,14),(18,'Troy Goff','(145) 936-1620',0,6),(19,'Shelley Watts','(621) 804-6153',1,4),(20,'Keefe Foley','(870) 858-1966',1,12);
+```
+
 
 
 

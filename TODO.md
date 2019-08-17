@@ -10,3 +10,4 @@
 | Cliente - Datanasc chk                           |      |      |      |      |
 | Cnh - chk                                        |      |      |      |      |
 | Check data de expiração da promo                 |      |      |      |      |
+| Dicionário - references                          |      |      |      |      |

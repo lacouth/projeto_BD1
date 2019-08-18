@@ -1,11 +1,10 @@
+USE WineStore
+
 INSERT INTO CATEGORIA VALUES (1, 'Branco')
 INSERT INTO CATEGORIA VALUES (2, 'Verde')
 INSERT INTO CATEGORIA VALUES (3, 'Tinto')
 INSERT INTO CATEGORIA VALUES (4, 'Rosé')
 INSERT INTO CATEGORIA VALUES (5, 'Federweisser')
-
-SELECT *
-FROM CATEGORIA
 
 INSERT INTO Pais VALUES (1,'Alemanha')
 INSERT INTO Pais VALUES (2,'Argentina')
@@ -35,8 +34,6 @@ INSERT INTO Pais VALUES (25,'Suécia')
 INSERT INTO Pais VALUES (26,'Suiça')
 INSERT INTO Pais VALUES (27,'Venezuela')
 
-SELECT * FROM PAIS
-
 INSERT INTO REGIAO VALUES (1, 'Banyuls', 1)
 INSERT INTO REGIAO VALUES (2, 'Blanquette', 13)
 INSERT INTO REGIAO VALUES (3, 'Cabardès', 13)
@@ -47,8 +44,6 @@ INSERT INTO REGIAO VALUES (7, 'Fitou', 8)
 INSERT INTO REGIAO VALUES (8, 'Maury', 16)
 INSERT INTO REGIAO VALUES (9, 'Minervois', 5)
 INSERT INTO REGIAO VALUES (10, 'Rivesaltes', 3)
-
-SELECT * FROM REGIAO
 
 --10
 INSERT INTO PRODUTOR([idPRODUTOR],[nome],[telefone],[idREGIAO]) VALUES(1,'Thaddeus Rosario','1-923-176-1492',8),(2,'Bruce Carpenter','1-750-272-6181',9),(3,'Kato Hicks','1-539-891-0964',6),(4,'Gannon Mcclure','1-417-193-5820',8),(5,'Jared Nichols','1-827-399-6137',9),(6,'Lance Ratliff','1-782-515-8647',2),(7,'Len Dillard','1-733-879-3751',5),(8,'Emerson Obrien','1-900-993-9728',6),(9,'Dane Santana','1-522-879-7658',6),(10,'Oren Armstrong','1-624-542-9546',7);
@@ -68,7 +63,7 @@ INSERT INTO ROTULO ([idROTULO],[nome],[descricao],[percentual_alcoolico],[preco]
 
 --10
 
-INSERT INTO LOJA_ROTULO([idLOJA],[idROTULO],[quantidade]) VALUES(6,8,30),(16,1,29),(3,5,7),(7,3,5),(15,2,8),(10,3,6),(18,6,33),(6,6,7),(18,9,30),(5,3,48);
+INSERT INTO ESTOQUE([idLOJA],[idROTULO],[quantidade]) VALUES(6,8,30),(16,1,29),(3,5,7),(7,3,5),(15,2,8),(10,3,6),(18,6,33),(6,6,7),(18,9,30),(5,3,48);
 
 --10
 INSERT INTO DISTRIBUIDOR([idDISTRIBUIDOR],[nome],[telefone]) VALUES(1,'Armando','(949) 963-6782'),(2,'Wilma','(745) 401-5875'),(3,'Madeline','(495) 301-8218'),(4,'Harper','(498) 638-0574'),(5,'Hyacinth','(742) 704-3576'),(6,'Kasper','(768) 423-4899'),(7,'Alyssa','(789) 812-0737'),(8,'Kenneth','(498) 891-0163'),(9,'Kevyn','(574) 275-3899'),(10,'Aiko','(797) 176-7147');
@@ -91,8 +86,6 @@ INSERT INTO VENDEDOR([idFUNCIONARIO],[comissao]) VALUES(11,10),(12,13),(13,12),(
 INSERT INTO CLIENTE([idCLIENTE],[nome],[telefone],[email],[data_nasc]) VALUES(1,'Prescott Suarez','(700) 535-8201','libero.at@est.edu','31/12/69'),(2,'Hanna Ray','(198) 973-2795','sagittis.Nullam.vitae@idrisusquis.com','31/12/69'),(3,'Angelica Vance','(481) 846-1264','ipsum.Phasellus@ornareplacerat.net','31/12/69'),(4,'Alana Sellers','(614) 761-1639','commodo.hendrerit@dictum.co.uk','31/12/69'),(5,'Jade Callahan','(340) 657-5066','eu@diam.org','31/12/69'),(6,'Glenna Nash','(618) 388-8798','a@interdumenimnon.co.uk','31/12/69'),(7,'Joseph Pate','(518) 431-6778','pretium.et@Pellentesquehabitant.co.uk','31/12/69'),(8,'Sarah Brock','(125) 725-3364','leo.in@inlobortistellus.org','31/12/69'),(9,'Quynn Maldonado','(633) 203-6548','erat.neque.non@vitaediam.ca','31/12/69'),(10,'Cullen Glass','(136) 869-8925','egestas.blandit@vel.com','31/12/69');
 INSERT INTO CLIENTE([idCLIENTE],[nome],[telefone],[email],[data_nasc]) VALUES(11,'Shad Becker','(230) 849-1957','leo.Morbi.neque@Aliquamfringilla.org','31/12/69'),(12,'Dane Frederick','(434) 705-3281','Proin@neque.com','31/12/69'),(13,'Macon Hutchinson','(618) 808-2427','Vivamus.euismod@vel.com','31/12/69'),(14,'Samuel Beard','(178) 962-6557','ultricies.adipiscing@Quisque.net','31/12/69'),(15,'Tamekah Taylor','(751) 266-6724','et.ultrices.posuere@odiosagittissemper.org','31/12/69'),(16,'Kasimir Robbins','(305) 296-8487','egestas.hendrerit@arcuVestibulum.ca','31/12/69'),(17,'Mona Cobb','(482) 822-2409','parturient.montes.nascetur@ornarelectus.net','31/12/69'),(18,'Maxine Jacobson','(188) 649-3968','nec@aliquetPhasellus.edu','31/12/69'),(19,'Desirae Elliott','(450) 655-6560','Nulla.facilisi.Sed@eu.org','31/12/69'),(20,'Sebastian Stevenson','(131) 100-0238','cursus.et.magna@sedsemegestas.org','31/12/69');
 --10
-INSERT INTO VENDEDOR([idFUNCIONARIO],[comissao]) VALUES(11,10),(12,13),(13,12),(14,12),(15,12),(16,12),(17,11),(18,11),(19,11),(20,10);
---10
 INSERT INTO PROMOCAO([idPROMOCAO],[nome],[data_expiracao],[desconto]) VALUES(1,'Sed nunc est,','28/06/20','0.07'),(2,'enim mi tempor','09/10/19','0.24'),(3,'Suspendisse sagittis. Nullam','12/12/19','0.08'),(4,'adipiscing. Mauris molestie','16/07/20','0.02'),(5,'pharetra nibh. Aliquam','15/01/20','0.04'),(6,'egestas nunc sed','01/10/19','0.07'),(7,'magna a neque.','04/08/20','0.02'),(8,'vestibulum nec, euismod','28/03/20','0.25'),(9,'magna. Suspendisse tristique','23/01/20','0.12'),(10,'hendrerit. Donec porttitor','05/08/20','0.03');
 
 --40
@@ -107,4 +100,4 @@ INSERT INTO COMPRA([idCOMPRA],[idCLIENTE],[idVENDEDOR],[data],[idPROMOCAO]) VALU
 INSERT INTO COMPRA_ROTULO([idCOMPRA],[idROTULO],[quantidade]) VALUES(1,7,39),(2,7,81),(3,6,159),(4,3,86),(5,7,50),(6,1,197),(7,8,176),(8,7,110),(9,2,170),(10,8,66),(11,2,158),(12,4,20),(13,10,113),(14,5,5),(15,9,31),(16,5,130),(17,6,189),(18,1,136),(19,5,3),(20,1,153),(21,9,199),(22,4,41),(23,2,110),(24,2,124),(25,1,13),(26,3,176),(27,5,17),(28,1,144),(29,3,66),(30,2,64),(31,2,158),(32,4,193),(33,3,26),(34,8,8),(35,6,139),(36,8,170),(37,4,104),(38,1,111),(39,10,110),(40,4,35);
 
 --20
-INSERT INTO CARTAO_FIDELIDADE([idCARTAO],[idCLIENTE],[pontos]) VALUES(1,1,104),(2,2,168),(3,3,200),(4,4,172),(5,5,184),(6,6,168),(7,7,121),(8,8,150),(9,9,128),(10,10,106),(11,11,153),(12,12,195),(13,13,150),(14,14,152),(15,15,166),(16,16,136),(17,17,146),(18,18,153),(19,19,165),(20,20,175);
+INSERT INTO CARTAO([idCARTAO],[pontos]) VALUES(1,104),(2,168),(3,200),(4,172),(5,184),(6,168),(7,121),(8,150),(9,128),(10,106),(11,153),(12,195),(13,150),(14,152),(15,166),(16,136),(17,146),(18,153),(19,165),(20,175);

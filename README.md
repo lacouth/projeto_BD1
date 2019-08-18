@@ -38,15 +38,11 @@ Patric Lacouth da Silva - 20191370047
 
 #### 2. ESQUEMA CONCEITUAL
 
-[IMAGEM]
-
-
+![Conceitual_projeto_v2](Conceitual_projeto_v2.png)
 
 #### 3. ESQUEMA LÓGICO
 
-
-
-
+![Logico_projeto](Logico_projeto.png)
 
 #### **4. DICIONÁRIO DE DADOS**
 

@@ -3,7 +3,7 @@ GO
 
 USE WineSTore
 GO
-/*** Criação da tabela categoria ***/
+/*** CriaÃ§Ã£o da tabela categoria ***/
 
 CREATE TABLE CATEGORIA (
 	idCATEGORIA		SMALLINT		NOT NULL,
@@ -12,7 +12,7 @@ CREATE TABLE CATEGORIA (
 	CONSTRAINT AK_categoria_nome	UNIQUE(nome)
 )
 
-/*** Criação da tabela  PAIS ***/
+/*** CriaÃ§Ã£o da tabela  PAIS ***/
 
 CREATE TABLE PAIS(
 	idPAIS			SMALLINT		NOT NULL,
@@ -21,7 +21,7 @@ CREATE TABLE PAIS(
 	CONSTRAINT AK_pais_nome			UNIQUE(nome)
 )
 
-/*** Criação da tabela  REGIAO ***/
+/*** CriaÃ§Ã£o da tabela  REGIAO ***/
 
 CREATE TABLE REGIAO(
 	idREGIAO			SMALLINT		NOT NULL,
@@ -32,7 +32,7 @@ CREATE TABLE REGIAO(
 	CONSTRAINT FK_regiao_pais			FOREIGN KEY (idPAIS) REFERENCES PAIS
 )
 
-/*** Criação da tabela  PRODUTOR ***/
+/*** CriaÃ§Ã£o da tabela  PRODUTOR ***/
 
 CREATE TABLE PRODUTOR(
 	idPRODUTOR			SMALLINT		NOT NULL,
@@ -45,7 +45,7 @@ CREATE TABLE PRODUTOR(
 	CONSTRAINT FK_produtor_regiao		FOREIGN KEY(idREGIAO) REFERENCES REGIAO
 )
 
-/*** Criação da tabela  ROTULO ***/
+/*** CriaÃ§Ã£o da tabela  ROTULO ***/
 
 CREATE TABLE ROTULO(	
 	idROTULO				SMALLINT		NOT NULL,
@@ -63,7 +63,7 @@ CREATE TABLE ROTULO(
 	CONSTRAINT FK_rotulo_produtor		FOREIGN KEY(idPRODUTOR) REFERENCES PRODUTOR
 )
 
-/*** Criação da tabela  VINICOLA ***/
+/*** CriaÃ§Ã£o da tabela  VINICOLA ***/
 
 CREATE TABLE VINICOLA(	
 	idPRODUTOR				SMALLINT		NOT NULL,
@@ -72,12 +72,12 @@ CREATE TABLE VINICOLA(
 	bairro					VARCHAR(45)		NOT NULL,
 	cep						VARCHAR(45)		NOT NULL,
 
-	CONSTRAINT PK_vinicola				PRIMARY KEY(idPRODUTOR),
-	CONSTRAINT AK_vinicola_nome			UNIQUE(nome),
-	CONSTRAINT FK_vinicola_produtor		FOREIGN KEY(idPRODUTOR) REFERENCES PRODUTOR
+	CONSTRAINT PK_vinicola					PRIMARY KEY(idPRODUTOR,nome),
+	CONSTRAINT AK_vinicola_nome				UNIQUE(nome),
+	CONSTRAINT FK_vinicola_produtor			FOREIGN KEY(idPRODUTOR) REFERENCES PRODUTOR
 )
 
-/*** Criação da tabela  CIDADE ***/
+/*** CriaÃ§Ã£o da tabela  CIDADE ***/
 
 CREATE TABLE CIDADE(	
 	idCIDADE				SMALLINT		NOT NULL,
@@ -89,7 +89,7 @@ CREATE TABLE CIDADE(
 	CONSTRAINT FK_cidade_pais			FOREIGN KEY(idPAIS) REFERENCES PAIS
 )
 
-/*** Criação da tabela LOJA ***/
+/*** CriaÃ§Ã£o da tabela LOJA ***/
 
 CREATE TABLE LOJA(	
 	idLOJA					SMALLINT		NOT NULL,
@@ -103,20 +103,21 @@ CREATE TABLE LOJA(
 	CONSTRAINT FK_loja_cidade				FOREIGN KEY(idCIDADE) REFERENCES CIDADE
 )
 
-/*** Criação da tabela LOJA-ROTULO ***/
 
-CREATE TABLE LOJA_ROTULO(	
+/*** Criação da tabela ESTOQUE ***/
+
+CREATE TABLE ESTOQUE(	
 	idLOJA					SMALLINT		NOT NULL,
 	idROTULO				SMALLINT		NOT NULL,
 	quantidade				INT				NOT NULL,
 
-	CONSTRAINT PK_loja_rotulo				PRIMARY KEY(idLOJA, idROTULO),
-	CONSTRAINT FK_loja_rotulo_rotulo		FOREIGN KEY(idROTULO) REFERENCES ROTULO,
-	CONSTRAINT FK_loja_rotulo_loja			FOREIGN KEY(idLOJA) REFERENCES LOJA,
+	CONSTRAINT PK_estoque					PRIMARY KEY(idLOJA, idROTULO),
+	CONSTRAINT FK_estoque_rotulo			FOREIGN KEY(idROTULO) REFERENCES ROTULO,
+	CONSTRAINT FK_estoque_loja				FOREIGN KEY(idLOJA) REFERENCES LOJA,
 	CONSTRAINT CK_quantidade				CHECK(quantidade >= 0)
 )
 
-/*** Criação da tabela DISTRIBUIDOR ***/
+/*** CriaÃ§Ã£o da tabela DISTRIBUIDOR ***/
 
 CREATE TABLE DISTRIBUIDOR(	
 	idDISTRIBUIDOR			SMALLINT		NOT NULL,
@@ -128,31 +129,33 @@ CREATE TABLE DISTRIBUIDOR(
 	CONSTRAINT AK_distribuidor_telefone		UNIQUE(telefone),
 )
 
-/*** Criação da tabela PEDIDO ***/
+/*** CriaÃ§Ã£o da tabela PEDIDO ***/
 
-CREATE TABLE PEDIDO(	
-	data				DATE		NOT NULL,
-	idDISTRIBUIDOR		SMALLINT	NOT NULL,
-	idLOJA				SMALLINT	NOT NULL,
-	idROTULO			SMALLINT	NOT NULL,
-	quantidade			int			NOT NULL,
+CREATE TABLE PEDIDO(
+	idPEDIDO			SMALLINT			NOT NULL,	
+	data				DATE				NOT NULL,
+	idDISTRIBUIDOR		SMALLINT			NOT NULL,
+	idLOJA				SMALLINT			NOT NULL,
+	idROTULO			SMALLINT			NOT NULL,
+	quantidade			int					NOT NULL,
 
-	CONSTRAINT PK_pedido					PRIMARY KEY(data, idDISTRIBUIDOR, idLOJA, idROTULO),
+	CONSTRAINT PK_pedido					PRIMARY KEY(idPEDIDO),
+	CONSTRAINT AK_pedido					UNIQUE(data, idDISTRIBUIDOR, idLOJA, idROTULO),
 	CONSTRAINT FK_pedido_distribuidor		FOREIGN KEY(idDISTRIBUIDOR) REFERENCES DISTRIBUIDOR,
 	CONSTRAINT FK_pedido_loja				FOREIGN KEY(idLOJA) REFERENCES LOJA,
 	CONSTRAINT FK_pedido_rotulo				FOREIGN KEY(idROTULO) REFERENCES ROTULO
 )
 
-/*** Criação da tabela FUNCIONARIO ***/
+/*** CriaÃ§Ã£o da tabela FUNCIONARIO ***/
 
 CREATE TABLE FUNCIONARIO(	
-	idFUNCIONARIO		SMALLINT		NOT NULL,
-	nome				VARCHAR(255)	NOT NULL,
-	telefone			VARCHAR(45)		NOT NULL,
-	email				VARCHAR(255)	NOT NULL,
-	ativo				TINYINT			NOT NULL,
-	idLOJA				SMALLINT		NOT NULL,
-	idchefia			SMALLINT		NULL,
+	idFUNCIONARIO		SMALLINT			NOT NULL,
+	nome				VARCHAR(255)		NOT NULL,
+	telefone			VARCHAR(45)			NOT NULL,
+	email				VARCHAR(255)		NOT NULL,
+	ativo				TINYINT				NOT NULL,
+	idLOJA				SMALLINT			NOT NULL,
+	idchefia			SMALLINT			NULL,
 
 	CONSTRAINT PK_funcionario				PRIMARY KEY(idFUNCIONARIO),
 	CONSTRAINT AK_funcionario_nome			UNIQUE(nome),
@@ -162,18 +165,18 @@ CREATE TABLE FUNCIONARIO(
 	--CONSTRAINT CK_funcionario_ativo			CHECK (ativo IN (0,1))
 )
 
-/*** Criação da tabela MOTORISTA ***/
+/*** CriaÃ§Ã£o da tabela MOTORISTA ***/
 
 CREATE TABLE MOTORISTA(	
-	idFUNCIONARIO		SMALLINT		NOT NULL,
-	cnh					VARCHAR(45)		NOT NULL,
+	idFUNCIONARIO		SMALLINT			NOT NULL,
+	cnh					VARCHAR(45)			NOT NULL,
 
-	CONSTRAINT PK_motorista				PRIMARY KEY(idFUNCIONARIO),
-	CONSTRAINT FK_motorista				FOREIGN KEY(idFUNCIONARIO) REFERENCES FUNCIONARIO,
-	CONSTRAINT CK_CNH					CHECK(LEN(cnh)=6)
+	CONSTRAINT PK_motorista					PRIMARY KEY(idFUNCIONARIO),
+	CONSTRAINT FK_motorista					FOREIGN KEY(idFUNCIONARIO) REFERENCES FUNCIONARIO,
+	CONSTRAINT CK_CNH						CHECK(LEN(cnh)=6)
 )
 
-/*** Criação da tabela VENDEDOR ***/
+/*** CriaÃ§Ã£o da tabela VENDEDOR ***/
 
 CREATE TABLE VENDEDOR(	
 	idFUNCIONARIO		SMALLINT		NOT NULL,
@@ -183,7 +186,7 @@ CREATE TABLE VENDEDOR(
 	CONSTRAINT FK_vendedor				FOREIGN KEY(idFUNCIONARIO) REFERENCES FUNCIONARIO,
 )
 
-/*** Criação da tabela CLIENTE ***/
+/*** CriaÃ§Ã£o da tabela CLIENTE ***/
 
 CREATE TABLE CLIENTE(	
 	idCLIENTE			SMALLINT		NOT NULL,
@@ -191,12 +194,14 @@ CREATE TABLE CLIENTE(
 	telefone			VARCHAR(45)		NOT NULL,
 	email				VARCHAR(255)	NOT NULL,
 	data_nasc			DATE			NOT NULL,
+	idCARTAO			SMALLINT		NULL,
 
 	CONSTRAINT PK_cliente				PRIMARY KEY(idCLIENTE),
+	CONSTRAINT FK_cliente_cartao		FOREIGN KEY(idCARTAO) REFERENCES CARTAO
 	CONSTRAINT CK_data_nasc				CHECK((YEAR(GETDATE()) - YEAR(data_nasc))>=18)
 )
 
-/*** Criação da tabela PROMOÇÃO ***/
+/*** CriaÃ§Ã£o da tabela PROMOÃÃO ***/
 
 CREATE TABLE PROMOCAO(	
 	idPROMOCAO			SMALLINT		NOT NULL,
@@ -208,7 +213,7 @@ CREATE TABLE PROMOCAO(
 	CONSTRAINT CK_data_exp				CHECK(data_expiracao > GETDATE())
 )
 
-/*** Criação da tabela COMPRA ***/
+/*** CriaÃ§Ã£o da tabela COMPRA ***/
 
 CREATE TABLE COMPRA(	
 	idCOMPRA			SMALLINT		NOT NULL,
@@ -223,7 +228,7 @@ CREATE TABLE COMPRA(
 	CONSTRAINT FK_compra_promocao		FOREIGN KEY(idPROMOCAO)	REFERENCES PROMOCAO,
 )
 
-/*** Criação da tabela COMPRA-ROTULO ***/
+/*** CriaÃ§Ã£o da tabela COMPRA-ROTULO ***/
 
 CREATE TABLE COMPRA_ROTULO(	
 	idCOMPRA			SMALLINT		NOT NULL,
@@ -236,15 +241,13 @@ CREATE TABLE COMPRA_ROTULO(
 	CONSTRAINT CK_compra_quantidade		CHECK(quantidade>0)
 )
 
-/*** CRIACAÇÃO DA TABELA CARTAO FIDELIDADE ***/
+/*** CRIACAÃÃO DA TABELA CARTAO FIDELIDADE ***/
 
 CREATE TABLE CARTAO_FIDELIDADE(
 	idCARTAO		SMALLINT		NOT NULL,
-	idCLIENTE		SMALLINT		NOT NULL,
 	pontos			SMALLINT		DEFAULT 100,
 
 
 	CONSTRAINT PK_cartao_fidelidade		PRIMARY KEY(idCARTAO),
-	CONSTRAINT FK_cartao_cliente		FOREIGN KEY(idCLIENTE) REFERENCES CLIENTE,
 )
 
